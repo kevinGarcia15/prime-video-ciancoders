@@ -1,11 +1,17 @@
+import React from 'react'
+import {BrowserRouter,Switch, Route} from 'react-router-dom'
+
+import Home from '../containers/Home'
+import NotFound from '../containers/NotFound'
 
 function App() {
   return (
-    <div className="App">
-      hell react
-      <h1>hello</h1>
-      <h5>world</h5>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route component={NotFound}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
