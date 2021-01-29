@@ -1,5 +1,4 @@
 import React from 'react'
-import carusel1 from '../assets/img/carusel-1.jpg'
 
 function CategoryItems(props) {
     const {cover} = props
