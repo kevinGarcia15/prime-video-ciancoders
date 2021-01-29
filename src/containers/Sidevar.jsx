@@ -12,20 +12,20 @@ import Kids from "../assets/img/kids.svg"
 
 function sidevar() {
   return (
-    <div class="backgound-primary relative h-full min-h-screen col-span-2">
+    <div className="backgound-primary relative h-full min-h-screen lg:col-span-2 hidden lg:block">
       <div className="flex mt-2 items-center">
-        <div class="px-4 cursor-pointer" id="burger">
+        <div className="px-4 cursor-pointer" id="burger">
           <svg
-            class="w-8 text-gray-500"
+            className="w-8 text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             fill="white"
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
