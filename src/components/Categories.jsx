@@ -9,10 +9,8 @@ function Categories({ children, title }) {
   let perViewScrean
   if (window.screen.width < 600) {
     perViewScrean = 1
-    console.log(perViewScrean)
   }else{
-    perViewScrean = 3
-    console.log(perViewScrean)
+    perViewScrean = 3    
   }
 
   return (
