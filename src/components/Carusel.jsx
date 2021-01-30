@@ -29,13 +29,13 @@ function Carusel() {
         slideClassName="slider__frame"
         focusAt="center"
       >
-        <Fragment>
+        <Fragment key="1">
           <img src={carousel_1} alt="carousel 1" />
         </Fragment>
-        <Fragment>
+        <Fragment key="2">
           <img src={carousel_3} alt="carousel 2" />
         </Fragment>
-        <Fragment>
+        <Fragment key="3">
           <img src={carousel_2} alt="carousel 3" />
         </Fragment>
       </Glide>

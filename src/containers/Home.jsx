@@ -177,7 +177,7 @@ export class Home extends Component {
   }
   render() {
     return (
-      <div className="lg:col-span-10 col-span-12 backgound-secundary">
+      <div>
         <div className=" flex flex-col">
           <Carusel />
           <Categories title="Amazon Originals and Exclusives">
