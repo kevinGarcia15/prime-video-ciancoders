@@ -33,10 +33,10 @@ function Carusel() {
           <img src={carousel_1} alt="carousel 1" />
         </Fragment>
         <Fragment key="2">
-          <img src={carousel_3} alt="carousel 2" />
+          <img src={carousel_2} alt="carousel 2" />
         </Fragment>
         <Fragment key="3">
-          <img src={carousel_2} alt="carousel 3" />
+          <img className="w-full" src={carousel_3} alt="carousel 3" />
         </Fragment>
       </Glide>
     </div>
