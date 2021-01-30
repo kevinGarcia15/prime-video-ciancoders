@@ -72,7 +72,7 @@ function Sidebar(props) {
         <Link to="/" className="flex m-3 mb-5">
           <img className="w-6 mr-2" src={Home} alt="home" />
           <span
-            className="text-gray-500 font-bold text-base tracking-wider description"
+            className="text-gray-500 font-bold text-base tracking-wider"
             style={{ display: props.status ? "block" : "none" }}
           >
             Home
@@ -81,7 +81,7 @@ function Sidebar(props) {
         <Link to="/" className="flex m-3 mb-5">
           <img className="w-6 mr-2" src={Store} alt="Store" />
           <span
-            className="text-gray-500 font-bold text-base tracking-wider description"
+            className="text-gray-500 font-bold text-base tracking-wider"
             style={{ display: props.status ? "block" : "none" }}
           >
             Store
@@ -90,7 +90,7 @@ function Sidebar(props) {
         <Link to="/" className="flex m-3 mb-5">
           <img className="w-6 mr-2" src={Channel} alt="Channel" />
           <span
-            className="text-gray-500 font-bold text-base tracking-wider description"
+            className="text-gray-500 font-bold text-base tracking-wider"
             style={{ display: props.status ? "block" : "none" }}
           >
             Channels
@@ -99,7 +99,7 @@ function Sidebar(props) {
         <Link to="/" className="flex m-3 mb-5">
           <img className="w-6 mr-2" src={myStuff} alt="myStuff" />
           <span
-            className="text-gray-500 font-bold text-base tracking-wider description"
+            className="text-gray-500 font-bold text-base tracking-wider"
             style={{ display: props.status ? "block" : "none" }}
           >
             My Stuffs
@@ -108,7 +108,7 @@ function Sidebar(props) {
         <Link to="/" className="flex m-3 mb-5">
           <img className="w-6 mr-2" src={Download} alt="Download" />
           <span
-            className="text-gray-500 font-bold text-base tracking-wider description"
+            className="text-gray-500 font-bold text-base tracking-wider"
             style={{ display: props.status ? "block" : "none" }}
           >
             Downloads
@@ -117,7 +117,7 @@ function Sidebar(props) {
         <Link to="/" className="flex m-3 mb-5">
           <img className="w-6 mr-2" src={Kids} alt="Kids" />
           <span
-            className="text-gray-500 font-bold text-base tracking-wider description"
+            className="text-gray-500 font-bold text-base tracking-wider"
             style={{ display: props.status ? "block" : "none" }}
           >
             Kids

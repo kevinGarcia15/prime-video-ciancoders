@@ -2,6 +2,7 @@ import React, { Fragment, Component } from "react";
 import Carusel from "../components/Carusel";
 import Categories from "../components/Categories";
 import CategoryItems from "../components/CategoryItems";
+import PageLoading from "../components/PageLoad";
 
 const initialState = {
   originals: [
@@ -172,10 +173,30 @@ export class Home extends Component {
     this.state = {
       loading: true,
       error: null,
-      data: initialState,
+      data: undefined,
     };
   }
+
+  componentDidMount(){
+    this.fetchData()
+  }
+
+  fetchData = async ()=>{
+    this.setState({loading:true})
+    try {
+      //simulando una API 
+      setTimeout(()=> {
+        const data = initialState
+        this.setState({loading:false, data:data})      
+      },3000)
+    } catch (error) {
+      this.setState({loading:false})
+    }
+  }
   render() {
+    if (this.state.loading) {
+      return <PageLoading/>
+    }
     return (
       <div>
         <div className=" flex flex-col">
