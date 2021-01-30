@@ -21,13 +21,13 @@ function Carusel() {
           classNames: "fade",
         }}
         peek={{
-          before: 500,
-          after: 500,
+          before: 0,
+          after: 0,
         }}
         perView={1}
-        startAt={1}
+        startAt={0}
         slideClassName="slider__frame"
-        focusAt="center"
+        focusAt={1}
       >
         <Fragment key="1">
           <img src={carousel_1} alt="carousel 1" />

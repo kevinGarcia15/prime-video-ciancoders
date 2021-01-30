@@ -24,7 +24,7 @@ function Layout({ children }) {
     return (
     <div className="grid grid-cols-12">
       <Sidebar onClickSidebar={handleSidebar} status={statusSidebar} />
-      <div className="lg:col-span-10 col-span-12 backgound-secundary" id="children">
+      <div className="lg:col-span-10 col-span-12 backgound-secundary h-screen lg:h-full" id="children">
       {children}
       </div>
     </div>

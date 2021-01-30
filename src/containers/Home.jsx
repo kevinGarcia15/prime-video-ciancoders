@@ -198,7 +198,6 @@ export class Home extends Component {
       return <PageLoading/>
     }
     return (
-      <div>
         <div className=" flex flex-col">
           <Carusel />
           <Categories title="Amazon Originals and Exclusives">
@@ -217,7 +216,6 @@ export class Home extends Component {
             ))}
           </Categories>
         </div>
-      </div>
     );
   }
 }

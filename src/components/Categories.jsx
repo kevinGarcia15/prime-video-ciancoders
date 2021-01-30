@@ -6,6 +6,14 @@ import "react-glidejs/dist/index.css";
 
 function Categories({ children, title }) {
   const gliderRef = useRef(null);
+  let perViewScrean
+  if (window.screen.width < 600) {
+    perViewScrean = 1
+    console.log(perViewScrean)
+  }else{
+    perViewScrean = 3
+    console.log(perViewScrean)
+  }
 
   return (
     <div className="m-6 mt-8">
@@ -22,13 +30,13 @@ function Categories({ children, title }) {
           classNames: "fade",
         }}
         peek={{
-          before: 500,
-          after: 500,
+          before: 100,
+          after: 0,
         }}
-        perView={1}
-        startAt={1}
+        perView={perViewScrean}
+        startAt={0}
         slideClassName="slider__frame"
-        focusAt="center"
+        focusAt={0}
       >
         {children}
       </Glide>
